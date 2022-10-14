@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.2/css/bootstrap.min.css' integrity='sha512-CpIKUSyh9QX2+zSdfGP+eWLx23C8Dj9/XmHjZY2uDtfkdLGo0uY12jgcnkX9vXOgYajEKb/jiw67EYm+kBf+6g==' crossorigin='anonymous'/>
+
+  <title>TreNOrd</title>
+
+</head>
+<body>
+
+  <main>
+
+    <div class="container">
+
+      <div class="row text-white text-center">
+
+        <h1>CALCOLA IL PREZZO DEL TUO BIGLIETTO</h1>
+
+        <div class="rl_box mt-3">
+
+          <div class="top text-black d-flex justify-content-center mt-3">
+
+            <div class="d-flex flex-column py-4 px-3">
+              <span>Nome Cognome</span>
+              <input type="text" id="name" class="mt-3"  value="" placeholder="Nome Cognome">
+            </div>
+    
+            <div class="d-flex flex-column py-4 px-3">
+              <span>Km da percorrere</span>
+              <input type="number" id="km" class="mt-3"  value="" placeholder="KM">
+            </div>
+    
+            <div class="div py-4 px-3">
+              <span>Fascia d'età</span>
+
+              <select id="eta" class="form-select rl_form" aria-label="Default select example">
+                <option selected value="maggiorenne">Maggiorenne</option>
+                <option value="minorenne">Minorenne</option>
+                <option value="over65">Over 65</option>
+              </select>
+            </div>
+            
+          </div>
+
+          <div class="button text-black d-flex justify-content-center my-3">
+            <button type="button" id="get" class="btn btn-outline-info mx-2">Genera</button>
+            <button type="button" id="flush" class="btn btn-outline-info mx-2">Annulla</button>
+          </div>
+          
+        </div>
+
+      </div>
+      
+      </div>
+
+    </div>
+
+
+    <div class="container pt-5">
+
+      <div class="row text-white text-center">
+
+        <h2>IL TUO BIGLIETTO</h2>
+
+        <div class="rl_box ticket text-black text-start py-3 mt-3">
+          
+          <h4 class="text-uppercase fw-bold">Dettagli passeggero</h4>
+
+          <div class="container text-black mt-3 border">
+
+            <div class="row">
+
+              <div class="col-4 ">
+
+                <div class="rl_card d-flex flex-column py-4 px-3 border">
+
+                  <h5>NOME PASSEGGERO</h5>
+                  <span id="name-output"></span>
+                 
+                </div>
+
+              </div>
+
+              <div class="col-2 d-flex flex-column justify-content-between py-3 ">
+                <h4>Offerta</h4>
+                <span id="offert"></span>
+              </div>
+
+              <div class="col-2 d-flex flex-column justify-content-between py-3 ">
+                <h4>Carrozza</h4>
+                <span id="carriage" class="fw-bold"></span>
+              </div>
+
+              <div class="col-2 d-flex flex-column justify-content-between py-3 ">
+                <h4>Codice CP</h4>
+                <span id="code" class="fw-bold"></span>
+              </div>
+
+              <div class="col-2 d-flex flex-column justify-content-between py-3 ">
+                <h4>Costo biglietto</h4>
+                <span id="cost"></span>
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+      
+      </div>
+
+    </div>
+
+  </main>
+
+  <script src="js/script.js"></script>
+
+</body>
+</html>

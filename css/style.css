@@ -1,0 +1,42 @@
+
+main{
+  background-color: #b91450;
+  height: 100vh;
+}
+
+.rl_box{
+  width: 100%;
+  background-color: white;
+  border-radius: 25px;
+  box-shadow: 0px 0px 10px 5px rgba(0, 0, 0, 0.418);
+}
+
+.rl_box.ticket{
+  display: none;
+}
+
+.d-block{
+  display: block;
+}
+
+.d-none{
+  display: none;
+}
+
+.rl_card{
+  width: 300px;
+  height: 200px;
+  background-color: gray;
+}
+
+.rl_form{
+  height: 30px;
+}
+
+.form-select.rl_form{
+  margin-top: 16px;
+  width: 150px;
+  line-height: 0;
+  border: 1px solid #676774;
+  border-radius: 2px;
+}
